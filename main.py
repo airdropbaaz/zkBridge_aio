@@ -20,7 +20,7 @@ async def main():
         logger.error('Не вставлены приватные ключи в файл keys.txt!...')
         return
     for i in rpcs.values():
-        if i == '':
+        if i == ' ':
             logger.error('Не вставлены rpc в файле config!...')
             return
     if not MODE:
